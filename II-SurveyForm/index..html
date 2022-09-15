@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Election Survey</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+      <h1>Election Survey</h1>
+      <p>We are curious about your idea on Politicians</p>
+      <form id="survey-form">
+        <fieldset>
+          <label>
+            <label>Full Name:
+              <input type="text" name="name" required  />
+            </label>
+            <label>Gender:
+              <select name="gender">
+                <option value="">(select one)</option>
+                <option value="1">Female</option>
+                <option value="2">Male</option>
+                <option value="3">Other</option>
+              </select>
+            </label>
+            <label>Age:
+              <input type="number" name="age" min="18" max="40" required  />
+            </label>
+            <label>Education level: 
+              <label><input type="radio" name="education" class="inline" /> Highschool and lower</label>
+              <label><input type="radio" name="education" class="inline" /> Undergraduate</label>
+              <label><input type="radio" name="education" class="inline" /> University and higher</label>
+        </fieldset>
+        <fieldset>
+          <label>Which politician do you support?</label>
+          <label> <input type="checkbox" name="politician" class="inline">Ekrem İmamoğlu</label>
+          <label> <input type="checkbox" name="politician" class="inline">Mansur Yavaş</label>
+          <label> <input type="checkbox" name="politician" class="inline">Recep Tayyip Erdoğan</label>
+        </fieldset>
+        <fieldset>
+          <label>Feel free to share your ideas...
+            <textarea name="idea" id="idea" cols="30" rows="4"></textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <input type="submit" value="Submit">
+        </fieldset>
+        </div>
+      </form>
+  </body>
+</html>
